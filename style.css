@@ -1,0 +1,145 @@
+/*background*/
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #cccccc 0%, #8453ac 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/*cabeçalho*/
+header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 999;
+    background-color:  rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+.projeto {
+    font-size: 24px;
+    margin-left: 25px;
+    color: #000000;
+}
+/*cartãousuario*/
+.centralizador {
+  height: 150px;
+  width: 500px; 
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: flex-start;
+  border-radius: 30px;
+  position: relative;
+}
+.imagemusuario {
+  height: 100px;
+  width: 100px;
+  margin-right: 25px;
+  border-radius: 100px;
+}
+/*configuracoes*/
+.config {
+  position: relative;
+  margin-left: auto;
+}
+.conteudo {
+  display: none;
+  position: absolute;
+  background-color: #ffffff00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0);
+  z-index: 1;
+  right: 0;
+}
+.config:hover .conteudo {
+  display: block;
+}
+.btmconfig {
+  background-color: #ffffff5e;
+  border-radius: 30px;
+  border: none;
+}
+.altnome {
+cursor: pointer;
+ background-color: #ffffff5e;
+ border: none;
+ width: 153px;
+}
+.altemail {
+  cursor: pointer;
+  background-color: #ffffff5e;
+  border: none;
+  width: 153PX;
+}
+/*botoes link*/
+.botoes-imagem {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+}
+.botoes-imagem a img {
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+}
+/*botão escuro*/
+.alternarmodoescuro {
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-right: 25px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+}
+.mode-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.dark-mode {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #000000 0%, #321c44 100%);
+    animation: Gradient 1s ease infinite;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.dark-mode .header {
+    background-color: rgba(255, 255, 255, 0.185);
+    border-bottom: 1px solid #ffffff;
+}
+.dark-mode .projeto {
+    color: #ffffff;
+}
+.dark-mode .alternarmodoescuro {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.dark-mode #nomeusuario {
+  color: #ffffff;
+}
+.dark-mode #emailusuario {
+  color: #ffffff;
+}
+.dark-mode .btmconfig {
+  color: #ffffff;
+}
+.dark-mode .altnome {
+  color: #ffffff;
+}
+.dark-mode .altemail {
+  color: #ffffff;
+}
